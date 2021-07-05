@@ -1,7 +1,3 @@
-/*
- * Copyright (c) 2014 laidian. All Rights Reserved.
- * @author yaoyuming
- */
 package com.eeeffff.common.utils;
 
 import org.slf4j.Logger;
