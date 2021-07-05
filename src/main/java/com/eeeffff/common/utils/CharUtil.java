@@ -1,7 +1,6 @@
 /*
  * Copyright (c) 2014 laidian. All Rights Reserved.
  * @author jiangchao
- * @date  2021-03-26 10:19
  */
 package com.eeeffff.common.utils;
 
@@ -10,7 +9,6 @@ package com.eeeffff.common.utils;
  * 部分工具来自于Apache Commons系列
  *
  * @author 
- * @date 2021-03-26 10:19
  */
 public class CharUtil {
 

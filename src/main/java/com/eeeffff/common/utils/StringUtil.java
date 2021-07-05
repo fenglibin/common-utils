@@ -1,8 +1,3 @@
-/*
- * Copyright (c) 2014 laidian. All Rights Reserved.
- * @author jiangchao
- * @date  2019-06-01 10:56
- */
 package com.eeeffff.common.utils;
 
 
@@ -14,7 +9,6 @@ import java.util.*;
  * 符合ERP业务需要的字符串处理类.
  *
  * @author jiangchaoo
- * @date 2019-06-01 10:56
  */
 public class StringUtil {
 
@@ -25,9 +19,7 @@ public class StringUtil {
      * getShortToken 生成一个短的token.
      *
      * @return java.lang.String
-     * @throws
      * @author jiang chao
-     * @date 2019/6/1:11:03
      */
     public static String getShortUUID() {
         Random rnd = new Random();

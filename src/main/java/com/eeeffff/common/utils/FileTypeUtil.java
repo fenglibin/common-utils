@@ -1,8 +1,3 @@
-/*
- * Copyright (c) 2014 laidian. All Rights Reserved.
- * @author jiangchao
- * @date  2021-03-25 15:55
- */
 package com.eeeffff.common.utils;
 
 import org.apache.commons.lang3.StringUtils;
@@ -17,7 +12,6 @@ import java.util.concurrent.ConcurrentSkipListMap;
  * 获取文件类型.
  *
  * @author jiangchao
- * @date 2021-03-25 15:55
  */
 public class FileTypeUtil {
     

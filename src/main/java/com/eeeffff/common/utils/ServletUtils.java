@@ -1,7 +1,6 @@
 /*
  * Copyright (c) 2014 laidian. All Rights Reserved.
  * @author yaoyuming
- * @date  2021/3/4 0004
  */
 package com.eeeffff.common.utils;
 

@@ -38,12 +38,11 @@ public class DoubleUtil {
 	}
 
 	/**
-     * @Description:保留指定位数的小数,不进行四舍五入
+     * 保留指定位数的小数,不进行四舍五入
      * @author wzw
      * @param d 
      * @param index
      * @return
-     * @Date 2017年10月17日
      */
     public static double keepDecimal(double d,int index){  
     	double result = d;
@@ -65,7 +64,6 @@ public class DoubleUtil {
     /**
      * 将object数据转换成double类型的数据
      * @author liuyang
-     * @date 2017年10月16日下午4:58:00
      * @param obj
      * @return
      */
@@ -85,7 +83,6 @@ public class DoubleUtil {
     /**
      * 将object数据转换成Integer类型的数据
      * @author liuyang
-     * @date 2017年10月16日下午4:58:00
      * @param obj
      * @return
      */
@@ -102,12 +99,11 @@ public class DoubleUtil {
     }
     
     /**
-     * @Description:获取指定经纬度范围内的随机经纬度
+     * 获取指定经纬度范围内的随机经纬度
      * @author wzw
      * @param point 参照经、纬度
      * @param radius 半径
      * @return
-     * @Date 2017年10月17日
      */
     public static double getRandomPoint(double point,double radius){
     	double result = 0.0;
@@ -123,11 +119,10 @@ public class DoubleUtil {
     }
     
     /**
-     * @Description:将double类型的数据转换成string类型，避免出现科学技术法的形式
+     * 将double类型的数据转换成string类型，避免出现科学技术法的形式
      * @author wzw
      * @param data
      * @return
-     * @Date 2017年11月27日
      */
     public static String changeDoubleToString(double data){
     	DecimalFormat decimalFormat = new DecimalFormat("#.######");//格式化设置
@@ -175,7 +170,6 @@ public class DoubleUtil {
 	 * @param d
 	 * @return
 	 * @author liuyang
-	 * @date 2018年8月22日下午1:51:33
 	 */
 	public static boolean isZero(Double d){
 		if(d == null){
@@ -235,7 +229,6 @@ public class DoubleUtil {
      * @param value2 除数
      * @param scale 精确范围
      * @return 两个参数的商
-     * @throws IllegalAccessException
      */
     public static double div(double value1,double value2,int scale){
         BigDecimal b1 = new BigDecimal(Double.valueOf(value1));
@@ -248,7 +241,6 @@ public class DoubleUtil {
 	 * @param longitude 纬度
 	 * @param latitude 经度
 	 * @return
-	 * @throws IllegalAccessException
 	 */
 	public static boolean checkLonAndLat(double longitude,double latitude){
 		if (longitude>= -90 && longitude<= 90 && latitude>= -180 && latitude<= -180){
@@ -258,16 +250,6 @@ public class DoubleUtil {
 	}
 	
 	public static void main(String[] args){
-	    /*double d=4.1317422564E9;
-		double d1=4.1317422564d;
-		double d2=4.13;
-		double d3=4d;
-		double d4=4.121;
-		System.out.println(DoubleUtil.keepNDecimal(d, 3));
-		System.out.println(DoubleUtil.keepNDecimal(d1, 3));
-		System.out.println(DoubleUtil.keepNDecimal(d2, 3));
-		System.out.println(DoubleUtil.keepNDecimal(d3, 3));
-		System.out.println(DoubleUtil.keepNDecimal(d4, 3));*/
 	    double d=4.0;
         double d1=4.1;
         double d2=4.13;

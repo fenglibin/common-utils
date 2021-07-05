@@ -7,8 +7,8 @@
     <artifactId>common-utils</artifactId>
     <version>1.1.0</version>
     <name>${project.artifactId}</name>
-	<description>The parent project of HASentinel</description>
-	<url>https://github.com/fenglibin/HASentinel</url>
+	<description>The parent project of common-utils</description>
+	<url>https://github.com/fenglibin/common-utils</url>
 	<licenses>
 		<license>
 			<name>Apache License, Version 2.0</name>
@@ -17,15 +17,15 @@
 		</license>
 	</licenses>
 	<scm>
-		<url>https://github.com/fenglibin/HASentinel</url>
-		<connection>scm:git:https://github.com/fenglibin/HASentinel.git</connection>
-		<developerConnection>scm:git:https://github.com/fenglibin/HASentinel.git</developerConnection>
+		<url>https://github.com/fenglibin/common-utils</url>
+		<connection>scm:git:https://github.com/fenglibin/common-utils.git</connection>
+		<developerConnection>scm:git:https://github.com/fenglibin/common-utils.git</developerConnection>
 	</scm>
 	<developers>
 		<developer>
-			<name>The HASentinel Project Contributors</name>
+			<name>The common-utils Project Contributors</name>
 			<email>56553655@163.com</email>
-			<url>https://github.com/fenglibin/HASentinel</url>
+			<url>https://github.com/fenglibin/common-utils</url>
 		</developer>
 	</developers>
 	<organization>
@@ -34,7 +34,7 @@
 	</organization>
 	<issueManagement>
 		<system>github</system>
-		<url>https://github.com/fenglibin/HASentinel/issues</url>
+		<url>https://github.com/fenglibin/common-utils/issues</url>
 	</issueManagement>
 	<distributionManagement>
 		<repository>
