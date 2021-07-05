@@ -7,9 +7,11 @@ import java.text.DecimalFormat;
 import java.text.NumberFormat;
 import java.util.regex.Pattern;
 
-
-//数值处理方法类
-
+/**
+ * 数值处理方法类
+ * @author fenglibin
+ *
+ */
 public class NumberUtil {
 	
 	public static boolean isShort(int val){

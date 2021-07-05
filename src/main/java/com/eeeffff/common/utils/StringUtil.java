@@ -12,32 +12,6 @@ import java.util.*;
  */
 public class StringUtil {
 
-
-    private static String TOKEN_KEY = "_a";
-
-    /**
-     * getShortToken 生成一个短的token.
-     *
-     * @return java.lang.String
-     * @author jiang chao
-     */
-    public static String getShortUUID() {
-        Random rnd = new Random();
-        byte[] tokenData = new byte[8];
-        rnd.nextBytes(tokenData);
-        String token = Base64.getEncoder().encodeToString(tokenData)
-                .replace("=", "")
-                .replace("+", "")
-                .replace("/", "");
-        return token;
-    }
-
-    public static String getAccessToken(Integer userId) {
-        String uuid = getShortUUID();
-        String accessToken = EncryUtil.encode(userId + TOKEN_KEY + "_" + uuid);
-        return accessToken;
-    }
-
     public static List<Integer> toIntegerList(String ids, String regex) {
         List<Integer> idList = new ArrayList<>();
         if (StringUtils.isNotEmpty(ids)) {
@@ -67,7 +41,7 @@ public class StringUtil {
      * @param args
      */
     public static void main(String[] args) {
-        getShortUUID();
+    	getUUID();
     }
 
 }
