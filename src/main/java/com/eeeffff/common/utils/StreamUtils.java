@@ -8,9 +8,8 @@ import java.util.stream.Collectors;
 import java.util.stream.Stream;
 
 /**
- * @Author: mcw
- * @Date: 2019/06/12 11:29
- * @Description: Collection Stream 辅助类
+ * Collection Stream 辅助类
+ * @author fenglibin
  */
 public class StreamUtils {
 
@@ -19,10 +18,7 @@ public class StreamUtils {
      * @param collection 集合对象
      * @param f 转换方法
      *
-     * @return {@link Set<T>}
-     *
-     * @author yaoyuming
-     * @date 2020/12/16 0016
+     * @return  Set
      */
     public static <T, V> Set<T> toSet(Collection<V> collection, Function<V, T> f) {
         if (CollectionUtils.isNotEmpty(collection)) {
@@ -37,10 +33,7 @@ public class StreamUtils {
      * @param collection 集合对象
      * @param f 转换方法
      *
-     * @return {@link List<T>}
-     *
-     * @author yaoyuming
-     * @date 2020/12/16 0016
+     * @return List
      */
     public static <T, V> List<T> toList(Collection<V> collection, Function<V, T> f) {
         if (CollectionUtils.isNotEmpty(collection)) {
@@ -56,10 +49,7 @@ public class StreamUtils {
      * @param key 转换方法
      * @param value 转换方法
      *
-     * @return {@link Map<K, V>}
-     *
-     * @author yaoyuming
-     * @date 2020/12/16 0016
+     * @return Map
      */
     public static <T, K, V> Map<K, V> toMap(Collection<T> collection, Function<T, K> key, Function<T, V> value) {
         if (CollectionUtils.isNotEmpty(collection)) {
@@ -74,10 +64,7 @@ public class StreamUtils {
      * @param collection 集合对象
      * @param key 转换方法
      *
-     * @return {@link Map<K, T>}
-     *
-     * @author yaoyuming
-     * @date 2020/12/16 0016
+     * @return Map
      */
     public static <T, K> Map<K, T> toMapIdentity(Collection<T> collection, Function<T, K> key) {
         if (CollectionUtils.isNotEmpty(collection)) {

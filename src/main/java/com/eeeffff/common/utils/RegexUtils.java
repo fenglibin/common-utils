@@ -165,7 +165,6 @@ public class RegexUtils {
     /**
      * <pre>
      * 获取网址 URL 的一级域名
-     * http://detail.tmall.com/item.htm?spm=a230r.1.10.44.1xpDSH&id=15453106243&_u=f4ve1uq1092 ->> tmall.com
      * </pre>
      *
      * @param url
@@ -205,9 +204,7 @@ public class RegexUtils {
      *
      * @param userAgent [浏览器标识]
      * @return true:移动设备接入，false:pc端接入.
-     * @throws
      * @author jiang chao
-     * @date 2019/6/10:14:55
      */
     public static boolean checkMobileDevices(String userAgent) {
 
@@ -254,10 +251,9 @@ public class RegexUtils {
     }
 
     /**
-     * @Description: specialCharacter:特殊字符过滤
-     * @Param: []
-     * @return:
-     * @Date: 2020/11/26
+     * specialCharacter:特殊字符过滤
+     * @param str
+     * @return 
      */
     public static String specialCharacter(String str) {
         if (StringUtils.isEmpty(str)) {

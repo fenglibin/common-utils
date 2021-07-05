@@ -1,15 +1,9 @@
-/*
- * Copyright (c) 2014 laidian. All Rights Reserved.
- * @author jiangchao
- * @date  2021-03-26 10:17
- */
 package com.eeeffff.common.utils;
 
 /**
  * 字符串常量.
  *
  * @author jiangchao
- * @date 2021-03-26 10:17
  */
 public class StrUtil {
 

@@ -8,7 +8,6 @@ import java.util.List;
 /**
  * sql查询、操作结果集工具
  * @author yaoyuming
- * @date 2020/7/1 0001
  */
 public class SqlUtils {
 
@@ -18,11 +17,7 @@ public class SqlUtils {
      * @param t 查询参数
      * @param query DAO查询器
      * @param modelToDTO model转dto方法
-     * @param <T> 查询参数类型
-     * @param <M> model类类型
-     * @param <R> dto类类型
      * @author yaoyuming
-     * @date 2020/12/16 0016
      * @return {@link M}
      */
     public static <T, R, M> M get(T t, SQLQuery<T, R> query, ModelToDTOConverter<R, M> modelToDTO) {
@@ -36,11 +31,7 @@ public class SqlUtils {
      * @param query DAO查询器
      * @param modelToDTO model转dto方法
      * @param mapper dto自转方法
-     * @param <T> 查询参数类型
-     * @param <M> model类类型
-     * @param <R> dto类类型
      * @author yaoyuming
-     * @date 2020/12/16 0016
      * @return {@link M}
      */
     public static <T, R, M> M get(T t, SQLQuery<T, R> query, ModelToDTOConverter<R, M> modelToDTO, DTOMapper<M> mapper) {
@@ -57,12 +48,8 @@ public class SqlUtils {
      * @param t 查询参数
      * @param listQuery DAO查询器
      * @param modelToDTO model转dto方法
-     * @param <T> 查询参数类型
-     * @param <M> model类类型
-     * @param <R> dto类类型
-     * @return {@link List<R>}
+     * @return List
      * @author yaoyuming
-     * @date 2020/7/1 0001
      */
     public static <T, M, R> List<R> getList(T t, SQLListQuery<T, M> listQuery, ModelToDTOConverter<M, R> modelToDTO) {
         return getList(t, listQuery, modelToDTO, e -> e);
@@ -75,12 +62,8 @@ public class SqlUtils {
      * @param listQuery DAO查询器
      * @param modelToDTO model转dto方法
      * @param mapper dto自转方法
-     * @param <T> 查询参数类型
-     * @param <M> model类类型
-     * @param <R> dto类类型
-     * @return {@link List<R>}
+     * @return List
      * @author yaoyuming
-     * @date 2020/7/1 0001
      */
     public static <T, M, R> List<R> getList(T t, SQLListQuery<T, M> listQuery, ModelToDTOConverter<M, R> modelToDTO, DTOMapper<R> mapper) {
         List<M> modelList = listQuery.getList(t);

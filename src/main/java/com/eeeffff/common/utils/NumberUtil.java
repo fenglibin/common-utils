@@ -221,8 +221,6 @@ public class NumberUtil {
 	 * @param before
 	 *         [去年同期的值]
 	 * @return double
-	 * @throws
-	 * @date  2018/11/9:13:31
 	 */
 	public static BigDecimal calYoY(BigDecimal current, BigDecimal before) {
 
@@ -249,8 +247,6 @@ public class NumberUtil {
 	 * @param before
 	 *         [before]
 	 * @return java.math.BigDecimal
-	 * @throws
-	 * @date  2019/1/8:14:31
 	 */
 	public static BigDecimal calYoYRate(BigDecimal current, BigDecimal before) {
 
@@ -277,7 +273,6 @@ public class NumberUtil {
 	 * @param before [上期数]
 	 * @return java.math.BigDecimal
 	 * @author jiang chao
-	 * @date 2018/11/9:15:51
 	 */
 	public static BigDecimal calMoM(BigDecimal current, BigDecimal before) {
 
@@ -306,7 +301,6 @@ public class NumberUtil {
 	 * @param before [上期数]
 	 * @return java.math.BigDecimal
 	 * @author jiang chao
-	 * @date 2018/11/9:15:51
 	 */
 	public static Double calMoMRate(BigDecimal current, BigDecimal before) {
 
@@ -328,8 +322,6 @@ public class NumberUtil {
 	 * @param fractionDigits
 	 *        [保留小数点后的位数]
 	 * @return java.lang.String
-	 * @throws
-	 * @date  2018/11/29:19:03
 	 */
 	public static  String  formatPercentStr(Double val,Integer fractionDigits){
     if(val==null){
@@ -363,7 +355,6 @@ public class NumberUtil {
 		 *         [要转换的值]
 		 * @return java.lang.String
 		 * @throws
-		 * @date  2018/11/29:19:03
 		 */
 		return formatPercentStr(val,2);
 	}
@@ -374,7 +365,6 @@ public class NumberUtil {
      * @param str 要检查的字符串
      * @return boolean
      * @author jianglin
-     * @date 2019/10/10
      */
     public static boolean isInteger(String str) {
     	if(null==str || str.length()==0) {

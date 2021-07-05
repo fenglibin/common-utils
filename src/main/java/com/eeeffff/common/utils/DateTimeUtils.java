@@ -761,6 +761,7 @@ public class DateTimeUtils {
     /**
      * 获取当月第一天的起始时间，例如2014-08-01 00:00:00
      *
+     * @param date
      * @return 返回当月第一天的起始时间
      */
     public static Date getMonthStartTime(Date date) {
@@ -775,6 +776,7 @@ public class DateTimeUtils {
     /**
      * 获取当月最后一天的结束时间，例如2014-08-31 23:59:59
      *
+     * @param date
      * @return 返回当月最后一天的结束时间
      */
     public static Date getMonthEndTime(Date date) {
@@ -801,6 +803,7 @@ public class DateTimeUtils {
     /**
      * 获取上个月第一天的起始时间，例如2014-07-01 00:00:00
      *
+     * @param date
      * @return 返回上个月第一天的起始时间
      */
     public static Date getLastMonthStartTime(Date date) {
@@ -827,7 +830,8 @@ public class DateTimeUtils {
 
     /**
      * 获取上个月最后一天的结束时间，例如2014-07-31 23:59:59
-     *
+     * 
+     * @param date
      * @return 返回上个月最后一天的结束时间
      */
     public static Date getLastMonthEndTime(Date date) {
@@ -861,6 +865,11 @@ public class DateTimeUtils {
       return getNextMonthStartTime(null);
     }
 
+    /**
+     * 
+     * @param date
+     * @return
+     */
     public static Date getNextMonthStartTime(Date date) {
       Calendar cal = Calendar.getInstance();
       if (date != null) {
@@ -1070,6 +1079,10 @@ public class DateTimeUtils {
       return getMonth(null);
     }
 
+    /**
+     * @param date
+     * @return
+     */
     public static int getDay(Date date) {
       Calendar cal = Calendar.getInstance();
       if (date != null) {
@@ -1089,6 +1102,11 @@ public class DateTimeUtils {
       return beginDate + " 00:00:00";
     }
 
+    /**
+     * 
+     * @param date
+     * @return
+     */
     public static Date getHourStart(Date date) {
       Calendar c = Calendar.getInstance();
       c.setTime(date);
@@ -1137,8 +1155,6 @@ public class DateTimeUtils {
      * @param second
      *         [秒]
      * @return java.util.Date
-     * @throws
-     * @date  2019/4/25:16:50
      */
     public static Date addOrMinusDate(Date date,int day,int hour,int minute,int second) {
       Calendar calendar = Calendar.getInstance();
@@ -1157,7 +1173,6 @@ public class DateTimeUtils {
      * @param patern
      * @return
      * @author liuyang
-     * @date 2017年10月13日下午2:33:54
      */
     public static String getLastDayOfMonth(Date day, String patern) {
       SimpleDateFormat format = new SimpleDateFormat(patern);

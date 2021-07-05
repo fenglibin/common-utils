@@ -1,8 +1,3 @@
-/*
- * Copyright (c) 2014 laidian. All Rights Reserved.
- * @author jiangchao
- * @date  2021-03-26 10:57
- */
 package com.eeeffff.common.utils;
 
 
@@ -17,7 +12,6 @@ import java.util.StringTokenizer;
  * 获取文件Mimetypes.
  *
  * @author jiangchao
- * @date 2021-03-26 10:57
  */
 
 public class Mimetypes {
